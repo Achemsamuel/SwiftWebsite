@@ -1,0 +1,245 @@
+////
+////  File.swift
+////
+////
+////  Created by Achem Samuel on 4/19/20.
+////
+
+import Foundation
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F8FAFB;
+    color: #000;
+    font-family: Helvetica, Arial;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    text-align: left;
+}
+
+header {
+    background-color: #F8FAFB;
+}
+
+header .wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .site-name {
+    font-size: 1.7em;
+    color: #F8FAFB;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav .site-sections {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: 000;
+    padding-left;
+    font-size: 1.3em;
+    /*    color: greenyellow*/
+}
+
+nav .centrous {
+    float: centerline;
+}
+
+li {
+    float: left;
+    font-size: 1.3em;
+    /*    font-weight: bold;*/
+    /*  border-right:1px solid #bbb;*/
+}
+
+li .but {
+    border: 0.1px solid #e6e6e6;
+    color: #ffdb4d;
+    padding-top: 2px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    border-radius: 6px;
+/*    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+    
+}
+
+li:last-child {
+    border-right: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 7px;
+    line-height: 2em;
+}
+
+nav li a.selected {
+    text-decoration: underline;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 5em;
+    padding-top: 90px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+h2 {
+    margin: 20px 0;
+       font-size: 5em;
+       padding-top: 20px;
+       padding-right: 10px;
+       padding-bottom: 20px;
+       padding-left: 10px;
+       z-index: 1;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+button {
+    border-radius: 12px;
+    border: 0px solid #4CAF50;
+    padding: 14px 30px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: gold;
+}
+
+.image {
+    width:700px;
+    position: absolute;
+    height:700px;
+    float: right;
+    padding-left: 650px;
+    margin-top: -140px;
+    margin-right: 200px;
+    z-index: -1;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: inherit;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.item-list > li {
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+
+.item-list > li:last-child {
+    margin-bottom: 0;
+}
+
+.item-list h1 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.item-list p {
+    margin-bottom: 0;
+}
+
+.tag-list {
+    margin-bottom: 15px;
+}
+
+.tag-list li,
+.tag {
+    display: inline-block;
+    background-color: #000;
+    color: #ddd;
+    padding: 4px 6px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.tag-list a,
+.tag a {
+    text-decoration: none;
+}
+
+.item-page .tag-list {
+    display: inline-block;
+}
+
+.content {
+    margin-bottom: 40px;
+}
+
+.browse-all {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.all-tags li {
+    font-size: 1.4em;
+    margin-right: 10px;
+    padding: 6px 10px;
+}
+
+footer {
+    color: #8a8a8a;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+    }
+    
+    body,
+    header .site-name {
+        color: #ddd;
+    }
+    
+    .item-list > li {
+        background-color: #333;
+    }
+    
+    header {
+        background-color: #000;
+    }
+}
+
+@media(max-width: 600px) {
+    .wrapper {
+        padding: 40px 20px;
+    }
+}
